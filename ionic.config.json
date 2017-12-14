@@ -1,0 +1,8 @@
+{
+  "name": "Kojak-Pronos",
+  "app_id": "1a6bcf6b",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

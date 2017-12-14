@@ -1,0 +1,448 @@
+page-prono {
+
+}
+
+.article
+{
+	padding-top: -10px;
+	width: 100%;
+	background-image:url("/assets/football.jpg");
+	height: 200px;
+	font-family: "CL";
+	text-align:left;
+	font-size:15px;
+
+}
+
+.item-ios {
+	padding-left: 0px;
+}
+
+.label-ios {
+    margin-top: 0px;
+    margin-right: 0px;
+    text-align: center;
+    }
+
+    .item-ios.item-block .item-inner {
+    padding-right: 0px}
+
+   .datesport
+   {
+   
+   height: 36px;
+   background-color: rgba(59, 59, 58, 0.65);   
+    width:80%;
+   }
+
+.sport
+{
+	float:right;
+	width:20%;
+	height: 36px;
+	background-color: #E90052;
+	padding: 9px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.nomequipe
+   {
+   
+   height: AUTO;
+   background-color: rgba(59, 59, 58, 0.65);   
+    width:8%;
+    
+   }
+.nomequipe1
+   {
+   
+   height: AUTO;
+   background-color: rgb(35, 33, 53);   
+    width:8%;
+    float:left;
+    font-family: 'PL';
+    text-align:center;
+    height: 45px;
+    padding-top: 14px;
+   }
+   .nomequipe2
+   {
+   
+   height: AUTO;
+   background-color: #38354E;   
+    width:32%;
+    float:left;
+    font-family: 'PL';
+    text-align:center;
+    height: 45px;
+    padding-top: 8px;
+    font-size: 25px;
+   }
+
+.nomequipe3
+   {
+  
+   height: AUTO;
+   background-color: rgba(59, 59, 58, 0.65);   
+    width:20%;
+    float:left;
+    font-family: 'CL';
+    text-align:center;
+height: 45px;
+padding-top: 8px;
+font-size: 25px;
+   }
+
+   .nomequipe4
+   {
+   
+   height: AUTO;
+   background-color: #38354E;   
+    width:32%;
+    float:left;
+    font-family: 'PL';
+    font-family: 'PL';
+    text-align:center;
+    height: 45px;
+    padding-top: 8px;
+    font-size: 25px;
+   }
+
+.date3 {
+    font-family: 'CL';
+    color: grey;
+    font-weight: bold;
+    font-size: 35px;
+    padding-left: 30px;
+    width: 110%;
+}
+
+.date4 {
+    font-family: 'CL';
+    color: #e90052;
+    font-weight: bold;
+    font-size: 35px;
+   
+}
+
+
+
+
+.nomequipe5
+   {
+   
+   height: AUTO;
+   background-color:rgb(35, 33, 53);   
+    width:8%;
+    float:left;
+    font-family: 'PL';
+    text-align:center;
+    height: 45px;
+    padding-top: 14px;
+    
+   }
+
+
+
+
+
+
+
+
+
+   @font-face {
+  font-family: "PL";
+  src: url('PL.woff');
+}
+@font-face {
+  font-family: "CL";
+  src: url("CL.woff") format("woff");
+}
+
+.logos{
+margin-left: 12%;
+margin-right: 12%;}
+
+
+
+.pronostic5
+{
+padding-top: 5px;
+  background-color: white;
+  text-align: center;
+  font-family: 'PL';
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+
+
+  border-top: 1px solid black;
+border-left: 0px;
+border-right: 0px;
+  border-bottom : 0px;
+ border-style:solid; 
+ border-color:#E4E4E4;
+ color:#e90052;
+
+  height:auto;
+}
+.item-ios {
+background-color:rgba(0, 0, 0, 0);
+}
+
+
+.pronostic4
+{
+  background-color: #E4E4E4;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+      height: 670px;
+  color:black;
+}
+
+.pronostic41
+{
+  background-color: #E4E4E4;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+      height: 180px;
+  color:black;
+}
+
+.date2
+{
+  font-family: 'CL';
+  color: grey;
+  font-weight: bold;
+}
+
+.analyse
+{
+  font-family: 'CL';
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+width: 90%;
+display: inline-block;
+text-align: left;
+    padding: 5px 10px;
+    background: rgba(46, 201, 92, 0.28);;
+    margin: 5px;
+    color: #634456;
+    border-radius: 3px;
+    white-space :normal;
+
+}
+
+.analyse2
+{
+  font-family: 'CL';
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  float: right;
+width: 90%;
+display: inline-block;
+text-align: right;
+    padding: 5px 10px;
+    background: rgba(225, 56, 56, 0.54);
+    margin: 5px;
+    color: #634456;
+    border-radius: 3px;
+    white-space :normal;
+
+}
+
+
+.absent
+{
+	border-radius: 50%;
+    
+    height: 35px;
+    width: 35px;
+    
+
+    font-family: 'CL';
+    font-size: 15px;
+    vertical-align:middle;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;}
+
+
+.sh1
+   {
+   
+   height: AUTO;
+   background-color: #02ff6b;   
+    width:8%;
+    float:left;
+    font-family: 'PL';
+    text-align:center;
+    height: 37px;
+    padding-top: 8px;
+    color: white;
+   
+   }
+   .sh2
+   {
+   
+    height: AUTO;
+   background-color: #02ff6b;   
+    width:8%;
+    float:left;
+    font-family: 'PL';
+    text-align:center;
+   height: 37px;
+    padding-top: 8px;
+    color: white;
+   
+   
+   }
+
+.sh3
+   {
+  
+    height: AUTO;
+   background-color: #e90052;   
+    width:8%;
+    float:left;
+    font-family: 'PL';
+    text-align:center;
+    height: 37px;
+    padding-top: 8px;
+    color: white;
+    
+   
+   }
+
+   .sh4
+   {
+   
+    height: AUTO;
+   background-color: #ebb539;   
+    width:8%;
+    float:left;
+    font-family: 'PL';
+    text-align:center;
+    height: 37px;
+    padding-top: 8px;
+    color: white;
+       
+   
+   }
+
+
+.sh5
+   {
+
+      height: AUTO;
+   background-color: #ebb539;   
+    width:8%;
+    float:left;
+    font-family: 'PL';
+    text-align:center;
+    height: 37px;
+    padding-top: 8px;
+    color: white;
+       
+   
+   }
+
+.homeresult
+{float:left;
+text-align: left;
+width: 50%;
+padding-left: 15%}
+
+.awayresult
+{float:right;
+text-align: right;
+width: 50%;
+padding-right: 15%}
+
+.homeresult2
+{float:left;
+text-align: left;
+width: 50%;
+
+}
+
+.awayresult2
+{float:right;
+text-align: right;
+width: 50%;
+padding-left: 25%;
+
+
+}
+   .sh6
+   {
+   
+    height: AUTO;
+     
+    width:20%;
+    float:left;
+    font-family: 'PL';
+    padding-right:4px;
+    text-align:center;
+    height: 37px;
+    padding-top: 7px;
+    color: white;
+      
+   
+    
+   }
+
+.innerMessage {
+    display: inline-block;
+    padding: 5px 10px;
+    background: color($colors, 'primary');
+    margin: 5px;
+    color: white;
+    border-radius: 3px;
+  }
+
+  .ajouter
+  {
+    background-color: red;
+  }
+
+  .button-ios2 {
+    border-radius: 2px;
+    height: 300px;
+    font-size: 2.7rem;
+    color: #634456;
+    float:center;
+    background-color: #ebb539;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: 'PL';
+    font-weight: bold;
+    white-space :normal;
+    width: 40%;
+    padding: 12px;
+}
+
+.item-ios .item-button {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  height: auto;
+  font-size: 1.3rem;
+}
+

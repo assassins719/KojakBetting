@@ -1,0 +1,85 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> <img style="text-align:center; padding-left: 20px; padding-top: 10px;" src="/assets/titre.PNG"> </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background-image: url(/assets/background.png); no-repeat center;background-size:cover;">
+<div  text-center class="pronostic5">
+ MES STATISTIQUES  
+<div class="date2">#BANKROLL</div>
+ <div  style="font-size:17px; text-align: center;" text-center class="pronostic44">
+
+<ion-grid text-center>
+  <ion-row>
+    <ion-col col-md-3>
+   <div (click)="changeCapital(stat.capital)">CAPITAL <br>DéPART: <div class="gris">1000 €</div></div>
+   NOMBRE DE <br>PARIS: <div class="gris">{{stat.paritotal}}</div>
+   
+    PARIS EN <br>COURS:  <br><div class="gris">{{stat.encours}}</div>
+  
+     MISES <BR>JOUéES: <div class="gris">{{stat.misetotal.toFixed(2)}} €</div>
+      ROI :<div class="gris"> {{stat.roi.toFixed(2)}} %</div> 
+    </ion-col>
+    <ion-col col-md-3>
+     CAPITAL<br> ACTUEL: <div class="gris"> {{stat.capitalactu.toFixed(2)}} €</div>
+      PARIS <br>GAGNANTS: <br><div style="color:green;" class="gris"> {{stat.gagne}}</div>
+        MISES EN <br>COURS: <br><div class="gris">{{stat.miseencours}} €</div>
+         TAUX DE <br>REUSSITE:<div class="gris"> {{stat.taux.toFixed(2)}} %</div>
+          PROGRESSION:<div class="gris"> {{stat.prog.toFixed(2)}} %</div>
+    </ion-col>
+    <ion-col col-md-3 >
+   MES<br> BéNéFICES: <br><div class="gris">{{stat.beneftotal.toFixed(2)}} €</div>
+       PARIS <br>PERDANTS:  <br><div style="color:red;" class="gris">{{stat.perdu}}</div>
+        MISE <BR>MOYENNE:<br> <div class="gris">{{stat.misemoy.toFixed(2)}} €</div>
+         CÔTE <BR>MOYENNE:<div class="gris">{{stat.cotemoy.toFixed(2)}}</div>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+ </div></div>
+<br>
+<div  text-center class="pronostic5">
+ éVOLUTION DE MA BANKROLL 
+<div class="date2">#SUIVI</div></div>
+
+<div class="prono">
+  <canvas #lineCanvas></canvas></div>
+  <button ion-button full (click)="postPronos()" [disabled]="-benefice>=capital" class="ajouterpari2">Ajouter un pari</button><br><br>
+<div  text-center class="pronostic5">
+ MES PRONOSTICS
+<div class="date2">#GESTION</div></div>
+
+
+
+
+
+
+    <ion-item *ngFor="let pari of paris" class="prono">
+    <div [ngClass]="{'gagne': pari.etat=='Gagné', 'perdu': pari.etat=='Perdu', 'enattente' : pari.etat=='En Attente'}">
+      <h2 style="text-align: center;">{{dateFormat(pari.date)}} - {{pari.sport}} </h2> <h2 style="color:#EAB536; text-align: center; font-size: 23px">{{pari.intitule}}</h2>
+        
+      <h3 style="font-size:20px; text-align: center;"   >   
+      <img src="assets/img/mise.png" height="15" width="15" />  Mise totale: {{pari.mise}} &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="assets/img/cote.png" height="15" width="15" />   côte totale: {{pari.cote}}</h3>    
+       <h3 style="font-size:20px; text-align: center;"   >   ________________</h3><br>
+     <h3 style="font-size:20px; text-align: center;"   >
+      <img src="assets/img/mise.png" height="15" width="15" />  Gain : {{pari.gain}} €&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="assets/img/mise.png" height="15" width="15" />  Bénéfice : <span [ngClass]="{'green': pari.benefice>0, 'red': pari.benefice<0}">{{pari.benefice}} €</span></h3><table><td>
+</td></table>
+      </div>
+    </ion-item>
+
+
+
+
+
+</ion-content>

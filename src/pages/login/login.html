@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Connexion</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="modal-background">
+
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="email" placeholder="Email" [(ngModel)]="email" ng-value="rose91719@gmail.com"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" placeholder="Mot de passe" [(ngModel)]="password" ng-value="123456jhs"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button block (click)="login()">Se Connecter</button>
+
+  <button ion-button block outline (click)="signup()">S'inscrire</button>
+
+  <button ion-button block clear (click)="viewCtrl.dismiss()">Annuler</button>
+
+</ion-content>

@@ -1,0 +1,170 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@font-face {
+  font-family: 'bebas';
+  src: url("../assets/fonts/BebasNeue.woff") format('woff');
+}
+
+.white-text {
+  vertical-align: bottom;
+}
+
+.prono{
+	margin-bottom:10px;
+	color:white;
+	font-family: 'bebas', sans-serif;
+	font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.heure {
+  margin-bottom: 10px;
+  color: white;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'bebas', sans-serif;
+  font-size: 17px;
+}
+
+.textblock {
+  white-space: normal;
+}
+
+.toolbar-background {
+  background-color: #8E1235;
+}
+
+.toolbar-title {
+  color: #fff;
+}
+
+.menu-background * {
+  background-color: white;
+  color: red;
+}
+
+.white-text {
+  color: #33312f;
+}
+
+.modal-background {
+  background-color: rgba(36, 43, 50, 0.9);
+}
+
+.gris {
+  overflow: inherit;
+    font-size: 2rem;
+    line-height: normal;
+    text-overflow: inherit;
+    color: #8e9093;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+#custom-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100000;
+  width:100%;
+  background-color: #002a3e;
+}
+
+
+
+.flb {
+  background-color: #0d0b15;
+  height:100%;
+  width:100%;
+  animation: pulse 1s linear forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item {
+  max-width: 50%;
+}
+.Aligner-item--top {
+  align-self: flex-start;
+}
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
+#custom-overlay img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  animation: animation 3100ms linear infinite both;
+  animation-delay: 1s;
+}
+
+
+@keyframes pulse {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+
+
+}
+
+
+
+
+.animation-target {
+  -webkit-animation: animation 1000ms linear both;
+  animation: animation 1000ms linear both;
+}
+
+/* Generated with Bounce.js. Edit at https://goo.gl/YRveN9 */
+
+@-webkit-keyframes animation { 
+  0% { -webkit-transform: matrix3d(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.3% { -webkit-transform: matrix3d(1.666, 0, 0, 0, 0, 1.666, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.666, 0, 0, 0, 0, 1.666, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  8.61% { -webkit-transform: matrix3d(2.066, 0, 0, 0, 0, 2.066, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.066, 0, 0, 0, 0, 2.066, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.91% { -webkit-transform: matrix3d(2.258, 0, 0, 0, 0, 2.258, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.258, 0, 0, 0, 0, 2.258, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.22% { -webkit-transform: matrix3d(2.303, 0, 0, 0, 0, 2.303, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.303, 0, 0, 0, 0, 2.303, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  28.33% { -webkit-transform: matrix3d(2.223, 0, 0, 0, 0, 2.223, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.223, 0, 0, 0, 0, 2.223, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  39.44% { -webkit-transform: matrix3d(2.193, 0, 0, 0, 0, 2.193, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.193, 0, 0, 0, 0, 2.193, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  61.66% { -webkit-transform: matrix3d(2.2, 0, 0, 0, 0, 2.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.2, 0, 0, 0, 0, 2.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  83.98% { -webkit-transform: matrix3d(2.2, 0, 0, 0, 0, 2.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.2, 0, 0, 0, 0, 2.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { -webkit-transform: matrix3d(2.2, 0, 0, 0, 0, 2.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.2, 0, 0, 0, 0, 2.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}
+
+@keyframes animation { 
+  0% { -webkit-transform: matrix3d(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.3% { -webkit-transform: matrix3d(1.666, 0, 0, 0, 0, 1.666, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.666, 0, 0, 0, 0, 1.666, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  8.61% { -webkit-transform: matrix3d(2.066, 0, 0, 0, 0, 2.066, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.066, 0, 0, 0, 0, 2.066, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.91% { -webkit-transform: matrix3d(2.258, 0, 0, 0, 0, 2.258, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.258, 0, 0, 0, 0, 2.258, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.22% { -webkit-transform: matrix3d(2.303, 0, 0, 0, 0, 2.303, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.303, 0, 0, 0, 0, 2.303, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  28.33% { -webkit-transform: matrix3d(2.223, 0, 0, 0, 0, 2.223, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.223, 0, 0, 0, 0, 2.223, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  39.44% { -webkit-transform: matrix3d(2.193, 0, 0, 0, 0, 2.193, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.193, 0, 0, 0, 0, 2.193, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  61.66% { -webkit-transform: matrix3d(2.2, 0, 0, 0, 0, 2.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.2, 0, 0, 0, 0, 2.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  83.98% { -webkit-transform: matrix3d(2.2, 0, 0, 0, 0, 2.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.2, 0, 0, 0, 0, 2.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { -webkit-transform: matrix3d(2.2, 0, 0, 0, 0, 2.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(2.2, 0, 0, 0, 0, 2.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}
+
+

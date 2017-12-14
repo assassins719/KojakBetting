@@ -1,0 +1,70 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Ajouter un pari</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background:url(assets/img/BG.png) no-repeat center;background-size:cover;">
+<div  text-center class="prono">
+ MES STATISTIQUES  </div>
+
+ <div  style="font-size:17px; text-align: center;" text-center class="prono">
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Sport</ion-label>
+      <ion-select [(ngModel)]="pari.sport" multiple="false">
+        <ion-option *ngFor="let sport of sports" value="{{sport}}">{{sport}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Intitulé du pari</ion-label>
+      <ion-input type="text"  [(ngModel)]="pari.intitule"></ion-input>
+    </ion-item>
+
+     <ion-item>
+      <ion-label floating>Mise</ion-label>
+      <ion-input type="number" (change)="calcGain()" [(ngModel)]="pari.mise"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Cote</ion-label>
+      <ion-input type="number" (change)="calcGain()" [(ngModel)]="pari.cote"></ion-input>
+    </ion-item>
+
+       <ion-item>
+      <ion-label>Etat</ion-label>
+      <ion-select [(ngModel)]="pari.etat" multiple="false" (ionChange)="calcGain()">
+        <ion-option *ngFor="let etat of etats" value="{{etat}}">{{etat}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="pari.date"></ion-datetime>
+    </ion-item>
+
+   
+
+    <ion-item *ngIf="pari.etat!='en attente'">
+      <ion-label>Gain: {{pari.gain}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Bénéfice: {{pari.benefice}}</ion-label>
+    </ion-item>
+
+    
+
+    <button ion-button block outline [disabled]="(!pari.mise) || (!pari.cote)" (click)="add()">Valider</button>_________________________________
+<br>
+    <button ion-button block clear (click)="viewCtrl.dismiss()">Annuler</button>
+
+  </ion-list>
+</div>
+</ion-content>

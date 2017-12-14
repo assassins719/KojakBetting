@@ -1,0 +1,16 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>BANKROLL</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+      <ion-label floating>Capital</ion-label>
+      <ion-input type="number" [(ngModel)]="bankroll.montant"></ion-input>
+  </ion-item>
+  <button ion-button block outline (click)="validate()">Valider</button>
+</ion-content>

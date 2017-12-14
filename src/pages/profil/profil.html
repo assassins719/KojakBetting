@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Profil</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background:url(assets/img/BG.png) no-repeat center;background-size:cover;">
+<div text-center class="prono"><h3>MON PSEUDO </h3>
+
+  <p style="color:grey;">{{user.pseudo}}</p>
+MON EMAIL 
+  <div text-center class="prono">
+  <p style="color:grey;">{{user.email}}<br></p></div></div>
+  <div text-center>
+  <button text-center ion-button (click)="resetPassword()">
+    Modifier mot de passe
+  </button></div>
+</ion-content>

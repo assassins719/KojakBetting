@@ -1,0 +1,155 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title> <img style="text-align:center; padding-left: 20px; padding-top: 10px;" src="/assets/titre.PNG"> </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background:url(/assets/background.png) no-repeat center;background-size:cover;">
+
+
+  <ion-item *ngIf="prono" no-lines class="prono">
+<div class="article"  >
+<div class="sport" float="right">#FOOT </div>
+<div class="datesport">dim. 08 oct. 2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button ion-button round  (click)="bankroll()" *ngIf="isFollowed" class="button-ios2">PRONOSTIC AJOUTé</button>  
+    <button ion-button round (click)="parier(prono)" *ngIf="!isFollowed" class="button-ios2">AJOUTER à MA BANKROLL</button>  <br>
+
+</div>
+
+<BR>
+<div class="logos">
+
+ <img [src]="prono.logo1" height="60" width="60" margin-left="100px" /> <img [src]="prono.logo2" height="60" width="60" align="right" margin-right="50px" />
+</div>
+<BR>
+<div class="nomequipe1">#{{prono.position1}}</div>
+<div class="nomequipe2">{{prono.equipe1}}</div>
+<div class="nomequipe3">{{prono.heure}}</div>
+<div class="nomequipe4">{{prono.equipe2}}</div>
+<div class="nomequipe5">#{{prono.position2}}</div>
+
+
+ </div>
+
+<div class="pronostic41">
+<div class="pronostic5" font-size="30px"> NOTRE PRONOSTIC <br>
+<div class="date2">#{{prono.eq1}}{{prono.eq2}}</div></div>
+ 
+<div class="homeresult">MISE CONSEILLéE<BR><div class="date3">{{prono.mise}}%</div></div>
+ <div text-align="left" class="awayresult">  
+ CÔTE<BR>
+ <div class="date3">{{prono.cote}}</div>
+  
+</div>
+
+
+  
+     <BR>    <BR>         
+     
+   <BR>
+    
+    NOTRE PRONOSTIC
+
+    <div class="date4">{{prono.prono}}</div>
+     
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="pronostic4">
+<div class="pronostic5" font-size="30px"> NOTRE ANALYSE <br>
+<div class="date2">#{{prono.eq1}}{{prono.eq2}}</div></div>
+ Série de match<BR><div class="date2">5 Derniers Matchs</div>
+<div class="homeresult">{{prono.equipe1}}</div>
+ <div text-align="left" class="awayresult">  
+ {{prono.equipe2}}
+  
+</div>
+<div class="sh1">G</div>
+<div class="sh2">G</div>
+<div class="sh3">P</div>
+<div class="sh4">N</div>
+<div class="sh5">N</div>
+<div class="sh6"></div>
+<div class="sh1">G</div>
+<div class="sh2">G</div>
+<div class="sh3">P</div>
+<div class="sh4">N</div>
+<div class="sh5">N</div>
+
+
+  
+     <BR>    <BR>         
+           <BR>    <BR> 
+   
+    
+    
+
+    
+     
+COMPOSITION<BR><div class="date2">Les Absents</div>
+<div class="homeresult2">
+<div class="absent"><img class="absent" src="https://www.sofascore.com/images/player/image_124712.png">NEYMAR </div>
+<div class="absent"><img class="absent" src="https://www.sofascore.com/images/player/image_826643.png">MBAPPE </div>
+<div class="absent"><img class="absent" src="https://www.sofascore.com/images/player/image_21521.png">CAVANI </div>
+   </div>
+<div class="mid"></div>
+<div class="awayresult2" text-align="right">
+<div class="absent">NEYMAR <img class="absent" src="https://www.sofascore.com/images/player/image_124712.png"></div>
+<div class="absent">MBAPPE <img class="absent" src="https://www.sofascore.com/images/player/image_826643.png"></div>
+<div class="absent">CAVANI <img class="absent" src="https://www.sofascore.com/images/player/image_21521.png"></div>
+   </div>
+
+
+
+
+
+    <BR>    <BR>         
+           <BR>    <BR> <BR> 
+   
+
+
+AVANTAGES ET INCONVEGNANTS<BR><div class="date2">Analyse </div>
+
+<div class="analyse" *ngIf="prono.av1">{{prono.av1}}</div>
+    <div class="analyse" *ngIf="prono.av2">{{prono.av2}}</div>
+    <div class="analyse" *ngIf="prono.av3">{{prono.av3}}</div>
+    <div class="analyse2" *ngIf="prono.neg1">{{prono.neg1}}</div>
+
+</div>
+
+
+
+ 
+
+
+  
+
+ 
+
+    
+   
+  </ion-item>
+
+</ion-content>

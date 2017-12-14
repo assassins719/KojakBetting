@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Administration Pronostic</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background:url(assets/img/BG.png) no-repeat center;background-size:cover;">
+
+<ion-item *ngFor="let pari of pronostic" class="prono" (click)="editPari(pari)">
+  <h2 style="text-align: center;">{{dateFormat(pari.date)}} - {{pari.sport}} </h2> <h2 style="color:#EAB536; text-align: center; font-size: 23px">{{pari.intitule}}</h2>
+    
+  <h3 style="font-size:20px; text-align: center;"   >   
+  <img src="assets/img/mise.png" height="15" width="15" />  Mise totale: {{pari.mise}} &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/img/cote.png" height="15" width="15" />   côte totale: {{pari.cote}}</h3>    
+   <h3 style="font-size:20px; text-align: center;"   >   ________________</h3><br>
+ <h3 style="font-size:20px; text-align: center;"   >
+  <img src="assets/img/mise.png" height="15" width="15" />  Gain : {{pari.gain}} €&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/img/mise.png" height="15" width="15" />  Bénéfice : <span [ngClass]="{'green': pari.benefice>0, 'red': pari.benefice<0}">{{pari.benefice}} €</span></h3><table><td>
+<p style="text-align: left;" >
+  </p></td><td style="text-align: right; margin-left: 40px;">
+  <p style="margin-left: 155px; text-align: right; font-size: 20px;" >Etat: <span [ngClass]="{'green': pari.etat=='Gagné', 'red': pari.etat=='Perdu'}">{{pari.etat}} </span></p></td></table>
+  <ion-row center>
+    <ion-col text-center>
+      Proposé par {{pari.detailUser.pseudo}}
+    </ion-col>
+  </ion-row>
+</ion-item>
+
+
+</ion-content>

@@ -1,0 +1,111 @@
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default
+{
+  color: #EBB539;
+}
+
+.toolbar-background {
+    background-color: rgba(142, 18, 53, 0);
+}
+
+.article
+{
+  width: 380px;
+ 
+}
+
+.pronostic3
+{
+  background-color: #E4E4E4;
+  padding-top: 90px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.pronostic2
+{
+padding-top: 5px;
+  background-color: white;
+  text-align: center;
+  font-family: 'PL';
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+
+
+  border-top: 1px solid black;
+border-left: 0px;
+border-right: 0px;
+  border-bottom : 0px;
+ border-style:solid; 
+ border-color:#E4E4E4;
+
+}
+
+.date
+{
+  font-family: 'CL';
+  color: grey;
+}
+
+.pronostic
+{
+  background-color: white;
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+  border-bottom : 1px solid black;
+ border-style:solid; 
+ border-color:#E4E4E4;
+ 
+
+
+ 
+}
+
+ion-app.ios [padding], ion-app.ios [padding] .scroll-content {
+    padding: 0px;
+}
+
+
+@font-face {
+  font-family: "PL";
+  src: url('PL.woff');
+}
+@font-face {
+  font-family: "CL";
+  src: url("CL.woff") format("woff");
+}
+
+table
+{
+  margin: auto;
+}
+
+.logoequipe
+{padding-right: 4px;
+padding-left: 4px;
+width: 45px;}
+
+.hora
+{padding-right: 4px;
+padding-left: 4px;
+width: 45px;
+text-align: center;
+background-color: #E90052;
+color: white;
+font-family: "CL";
+height: 20px;
+padding-top: 2px;}
+
+.equipa
+{padding-right: 0px;
+padding-left: 0px;
+width: 45px;
+text-align: center;
+font-family: "PL";
+}
+
+.position
+{
+  padding-left: -30px;
+}

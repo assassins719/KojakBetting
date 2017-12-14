@@ -1,0 +1,132 @@
+page-bankroll {
+background-color:red;
+
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+}
+
+.prono {
+	background-color: rgba(72, 138, 255, 0.25);
+}
+
+.gris
+{font-family: 'CL';
+font-weight:bold;}
+
+.pronostic44
+{
+  background-color: #E4E4E4;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+      height: auto;
+  color:black;
+  font-family: 'PL';
+}
+
+.pronostic5
+{
+padding-top: 5px;
+  background-color: white;
+  text-align: center;
+  font-family: 'PL';
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+
+
+  border-top: 1px solid black;
+border-left: 0px;
+border-right: 0px;
+  border-bottom : 0px;
+ border-style:solid; 
+ border-color:#E4E4E4;
+ color:#e90052;
+
+  height:100px;
+}
+.item-ios {
+background-color:rgba(0, 0, 0, 0);
+}
+
+
+.ajouterpari2 {
+		display: inline-block;
+		padding: 5px 10px;
+		background:#F0F0F0;
+		margin: 5px;
+		margin-right: 5px;
+		color:#38354e;
+		border-radius: 3px;
+		width: 100%;
+	
+	
+		background: #e90052;
+		color: #F0F0F0;
+	}
+
+.perdu
+{
+  display: inline-block;
+    padding: 5px 10px;
+    background:#F0F0F0;
+
+    color:#e90052;
+    border-radius: 3px;
+    width: 90%;
+    background: rgba(225, 56, 56, 0.58);
+    color: #F0F0F0;
+    float:right;
+  
+}
+
+.gagne
+{
+  display: inline-block;
+    padding: 5px 10px;
+    background:#F0F0F0;
+
+    color:#e90052;
+    border-radius: 3px;
+    width: 90%;
+    background: rgba(46, 201, 92, 0.54);
+    color: #F0F0F0;
+    float:left;
+  
+}
+
+.item-ios.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: 0px solid #c8c7cc;}
+
+    .enattente
+{
+  display: inline-block;
+    padding: 5px 10px;
+    background:#F0F0F0;
+
+    color:#e90052;
+    border-radius: 3px;
+    width: 90%;
+    background: rgb(105, 113, 125);
+    color: #F0F0F0;
+    float:center;
+  
+}
+
+.menu-background *
+{
+  background-color: #E4E4E4;
+  font-family: 'CL';
+  font-weight: bold;
+  font-size: 21px;
+  float: left;
+}
+
+.toolbar  {
+background-image: url('../assets/background.png');}

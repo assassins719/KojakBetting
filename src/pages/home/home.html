@@ -1,0 +1,167 @@
+<?php header("Access-Control-Allow-Origin: *"); ?>
+
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> <img style="text-align:center; padding-left: 20px; padding-top: 10px;" src="/assets/titre.PNG"> </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-image: url(/assets/background.png); no-repeat center;background-size:cover;">
+
+  
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <div class="article"><img style="width: 500px;" src="/assets/test.png"></div>
+
+<div class="pronostic3">
+<div class="pronostic2"> PRONOSTICS DU JOUR <br>
+<div class="date">jeudi 05 octobre 2017</div></div>
+  <div class="pronostic" *ngFor="let prono of pronos" (click)="goto(prono)">
+
+    
+
+    <table >
+   <tr>
+       <td> <div class="equipa">{{prono.eq1}}</div></td>
+       <td class="logoequipe"><img [src]="prono.logo1" height="25" width="25" /></td>
+       <td> <div class="hora" *ngIf="!prono.vip">{{prono.heure}} </div></td>
+       <td class="logoequipe"> <img [src]="prono.logo2" height="25" width="25" /></td>
+       <td class="equipa"> {{prono.eq2}} </td>
+       <td style="color:#110E1C;   "><ion-icon name="md-arrow-round-forward"></ion-icon></td>
+
+   </tr>
+  
+</table>
+        
+            
+            
+   
+    
+    
+
+    <div *ngIf="prono.vip">
+      <h1 text-center>RESERVE VIP</h1>
+    </div>
+
+</div>
+     
+
+
+  </div>
+<BR>
+<BR><BR><BR>
+
+<!-- classement -->
+<br/><br/><br/><br/>
+<div class="pronostic2"> 
+  CLASSEMENT MEILLEUR BANKROLL <br>
+  <div class="date">OCTOBRE</div>
+</div>
+
+<ion-grid style="text-align:center;" class="pronostic">
+
+  <ion-row nowrap >
+    <ion-col>
+      Pos
+    </ion-col>
+    <ion-col>
+      Pseudo
+    </ion-col>
+    <ion-col>
+      Gain
+    </ion-col>
+  </ion-row>
+  <ion-row nowrap *ngFor="let key of JSObject.keys(classementBankroll);let i=index">
+    <ion-col>
+      {{i+1}}
+    </ion-col>
+    <ion-col>
+      {{classementBankroll[key].displayName}}
+    </ion-col>
+    <ion-col>
+      {{classementBankroll[key].benefice}} €
+    </ion-col>
+  </ion-row>
+
+</ion-grid>
+
+<!-- <div style="text-align:left;" class="pronostic" *ngFor="let key of JSObject.keys(classementBankroll)">
+
+  <div style="text-align: left;" class="">
+
+    <table>
+      <tr>
+        <th class="position">Pos</th>
+        <th> Utilisateur </th>
+        <th> P </th>
+        <th> GD</th>
+        <th> Pts </th></tr>
+        <tr>
+        <td> 1</td>
+
+        <td class="logoequipe">{{key}}</td>
+        <td> <div class=""> {{classementBankroll[key]}}</div></td>
+        <td> <div class=""> 7</div></td>
+        <td> <div class=""> 20</div></td>
+        <td> <div class=""> 19</div></td>
+      </tr>
+    </table>
+
+  </div>
+
+
+</div> -->
+
+<!-- classement -->
+
+
+<BR>
+<BR><BR><BR>
+  <div class="pronostic2"> DERNIERS RéSULTATS <br>
+<div class="date">BILAN</div></div>
+  <div class="pronostic" *ngFor="let prono of pronos" (click)="goto(prono)">
+
+    <div style="text-align: center;" class="">
+
+    <table >
+   <tr>
+
+       <td> <div class="equipa">{{prono.eq1}}</div></td>
+       <td class="logoequipe"><img [src]="prono.logo1" height="25" width="25" /></td>
+       <td> <div class="hora" *ngIf="!prono.vip">2-1 </div></td>
+       <td class="logoequipe"> <img [src]="prono.logo2" height="25" width="25" /></td>
+       <td class="equipa"> {{prono.eq2}} </td>
+       <td style="color:#110E1C;   "><ion-icon name="md-arrow-round-forward"></ion-icon></td>
+
+   </tr>
+  
+</table>
+        
+            
+            
+   
+     </div>
+    
+
+    <div *ngIf="prono.vip">
+      <h1 text-center>RESERVE VIP</h1>
+    </div>
+
+
+     
+
+
+  </div>
+
+
+
+
+
+
+
+</ion-content>

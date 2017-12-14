@@ -1,0 +1,64 @@
+<ion-header><div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/sansfond.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div></ion-header>
+
+<ion-menu [content]="content">
+  <ion-header>
+
+    <ion-toolbar>
+      <ion-title *ngIf="!pseudo">Kojak Pronos</ion-title>
+      <ion-title *ngIf="pseudo"  menuClose>{{pseudo}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="menu-background">
+    <ion-list>
+
+      <button menuClose ion-item no-lines  *ngFor="let p of pages" (click)="openPage(p)">
+         &nbsp;&nbsp;&nbsp;<ion-icon name="{{p.icon}}"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="white-text">{{p.title}}</span>
+      </button>
+
+       
+
+       <button menuClose ion-item (click)="openPage({ title: 'Chat', component: 'ChatPage' })">
+      <img src="assets/img/chat.png"  />
+        <span class="white-text">Chatroom VIP </span>
+      </button>
+
+
+
+    <!--boutton twitter--><div class="item-inner2">
+    <button ion-item no-lines inner-none onclick="window.open('https://twitter.com/KojakPronos', '_system', 'location=no'); return false;">
+        &nbsp;&nbsp;&nbsp;<ion-icon name="logo-twitter"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="white-text">Twitter</span>
+    </button></div>
+
+    </ion-list>
+    
+    
+  
+
+  <ion-footer *ngIf="pseudo" class="menu-background">
+    <ion-item no-lines>
+
+
+     <button menuClose ion-item (click)="openPage({ title: 'Profil', component: 'ProfilPage' })">
+      <ion-icon name="md-settings"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="white-text">Paramètres</span>
+      </button>
+      <button menuClose ion-item (click)="logout()">
+       '<img src="assets/img/bankroll.png"  />&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="white-text">Se déconnecter</span>
+      </button>
+    </ion-item>
+  </ion-footer>
+</ion-content>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

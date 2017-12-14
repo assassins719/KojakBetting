@@ -1,0 +1,25 @@
+<!--
+  Generated template for the PaymentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>payment</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <ion-input [(ngModel)]="cardinfo.number" placeholder="card number"></ion-input>
+  <ion-input [(ngModel)]="cardinfo.expMonth" placeholder="expiry month"></ion-input>
+  <ion-input [(ngModel)]="cardinfo.expYear" placeholder="expiry year"></ion-input>
+  <ion-input [(ngModel)]="cardinfo.cvc" placeholder="cvc"></ion-input>
+  <button ion-button (click)="pay()"> Pay Now </button>
+  
+</ion-content>
